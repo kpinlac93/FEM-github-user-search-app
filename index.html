@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | GitHub user search app</title>
+</head>
+<body class="">
+  <div class="container">
+    <div class="header">
+      <h1 class="logo">devfinder</h1>
+      <div class="toggle-button toggle-dark">
+        <p class="toggle-text">Dark</p>
+        <div class="icon"></div>
+      </div>
+    </div>
+    <div class="search-box">
+      <div class="search-icon"></div>
+      <input type="text" name="github-username" id="" placeholder="Search GitHub username…">
+      <div class="search-button" id="search-button">Search</div>
+      <div class="no-results hidden">No Results</div>
+    </div>
+    <div class="content-box">
+      <div class="user-icon desktop" id="user-icon"></div>
+      <div class="user-tags">
+        <div class="user-icon tablet-phone" id="user-icon0"></div>
+        <div class="user-info">
+          <h1 class="user-name" id="name"></h1>
+          <p class="user-join-date" id="join-date"></p>
+          <p class="user-tag" id="login"></p>
+        </div>
+      </div>
+      <div class="user-stats">
+        <div class="user-description">
+          <p id="bio"></p>
+        </div>
+        <div class="user-stat-box">
+          <div class="repos">
+            <h2>Repos</h2>
+            <h1 id="repos">0</h1>
+          </div>
+          <div class="follower">
+            <h2>Followers</h2>
+            <h1 id="followers">0</h1>
+          </div>
+          <div class="following">
+            <h2>Following</h2>
+            <h1 id="following">0</h1>
+          </div>
+        </div>
+        <div class="user-links">
+          <div class="location">
+            <div class="icon-location"></div>
+            <p id="location"></p>
+          </div>
+          <div class="twitter">
+            <div class="icon-twitter"></div>
+            <p id="twitter"></p>
+          </div>
+          <div class="blog">
+            <div class="icon-website"></div>
+            <p id="blog"></p>
+          </div>
+          <div class="company">
+            <div class="icon-company"></div>
+            <p id="company"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
